@@ -33,6 +33,8 @@ namespace PISservice.Controllers
                     await file.CopyToAsync(fileSteam);
                 }
 
+                DateTime dt = DateTime.Now;
+
                 LogFileModel logModel = new LogFileModel();
                 logModel.fileExtension = model.fileExtension;
                 logModel.fileName = model.fileName;
